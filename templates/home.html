@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analyzer</title>
+
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+
+<body>
+
+    <center>
+        <div class="container mt-5">
+            <h1>SENTIMENT ANALYZER</h1>
+            <form action="{{url_for('home')}}" method="POST">
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Indonesia Coffee Shop Sentiment
+                                Analyzer</label>
+                            <input style="width: 500px; height: 100px;" type="text" name="sentiment"
+                                class="form-control" id="formGroupExampleInput"
+                                placeholder="Masukkan kalimat sentimen anda terhadap Kedai Kopi di Indonesia!!! ">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Analyzer</button>
+            </form>
+        </div>
+        <br><br><br><br><br>
+       
+    </center>
+    <div class="container">
+        <h1><i>Kelompok 2 (Tel-U 6)</i></h1>
+        <br>
+        <h3>1. M Ridho Faza A.K</h3>
+        <h3>2. Wika Meilany</h3>
+        <h3>3. Dwiki Ramadhan</h3>
+    </div>
+</body>
+
+</html>
